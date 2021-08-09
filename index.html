@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TQV</title>
+    <!--thay icon trên trang-->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkU_CeHKJxKFqFt75ByCPIUPb-1yU0Zp98vg&usqp=CAU" type="image/x-icon"/>
+    <!--kết thúc thay icon trong 1 trang-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/reponsive.css">
+    <link rel="stylesheet" href="asset/font/themify-icons/themify-icons.css">
+    <script src="/asset/css/javascript.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--viewport của trang-->
+</head>
+<body>
+    <div id="main">
+        <!--star nav-->
+
+        <div id="header">
+            <ul id="navi">
+                <li><a href="#">Home</a></li>  <!--cách tạo đường link tới thẻ div-->
+                <li><a href="#band">Band</a></li> <!--cách tạo đường link tới-->
+                <li><a href="#tour">Tour</a></li> <!--cách tạo đường link tới-->
+                <li><a href="#contact">Contact</a></li> <!--cách tạo đường link tới-->
+                <li>
+                    <a href="#">
+                        More
+                        <i class="ti-angle-down"></i>  <!--phần icon sau more, dùng bộ icon tải về, tạo class bằng lớp icon đó-->
+                    </a>
+                    <ul class="subnavi">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+
+                <!--end nav-->
+                <div class="button-ti-search"><i class="ti-search"></i></div>
+                <div class="mobilemenu"><i class="ti-menu"></i></div>
+            </ul>     
+        </div>
+
+        <!--phần slider nav-->
+        <div id="slider">
+          <div class="content-header">
+             <h2>Chicago</h2>
+             <p> Thank you, Chicago - A night we won't forget.</p>
+          </div>
+        </div>
+    
+        <!--end slider nav-->
+
+        <div id="content">
+
+            <!--about-->
+            <div id="band" class="selection-content">
+                <h2  class="selection-heading">THE BAND</h2>
+                <p class="selection-sub-heading">We love music</p>
+                <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="menber-list">
+                    <div class="menber-icon">
+                        <p class="menber-name">Name</p>
+                        <img class="menber-img" src="/asset/img/band/bandmember.jpg" alt="ảnh thành viên">
+                    </div>
+                    <div class="menber-icon">
+                        <p class="menber-name">Name</p>
+                        <img class="menber-img" src="/asset/img/band/bandmember.jpg" alt="ảnh thành viên">
+                    </div>
+                    <div class="menber-icon">
+                        <p class="menber-name">Name</p>
+                        <img class="menber-img" src="/asset/img/band/bandmember.jpg" alt="ảnh thành viên">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            
+            </div>
+            <!--end about-->
+
+            <!--Tour-->
+            <div id="content-tour">
+                <div id="tour" class="selection-content">
+                    <!--Tour tickets-->
+                    <div id="selection-tour">
+                        <h2 class="selection-heading text-white">TOUR DATES</h2>
+                        <p class="selection-sub-heading text-white">Remember to book your tickets!</p>
+                        <ul class="tickets-list">
+                            <li> September <samp class="Sold-out">Sold out</samp></li>
+                            <li> October <samp class="Sold-out">Sold out</samp></li>
+                            <li> November <span class="qualyti">3</span></li>
+                        </ul>
+                    </div>   
+                    <!--end tickets-->
+                    <div class="row">
+                        <div class="place-item">
+                            <img src="/asset/img/band/place1.jpg" alt="palace img" class="place-img">
+                            <h2 class="place-header">New York</h2>
+                            <p class="place-sub-header">Fri 27 Nov 2016</p>
+                            <p class="place-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="btn">Buy Tickets</p>
+                        </div>
+                        <div class="place-item">
+                            <img src="/asset/img/band/place2.jpg" alt="palace img" class="place-img">
+                            <h2 class="place-header">Paris</h2>
+                            <p class="place-sub-header">Sat 28 Nov 2016</p>
+                            <p class="place-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="btn">Buy Tickets</p>
+                        </div>
+                        <div class="place-item">
+                            <img src="/asset/img/band/place3.jpg" alt="palace img" class="place-img">
+                            <h2 class="place-header">San Francisco</h2>
+                            <p class="place-sub-header">Sun 29 Nov 2016</p>
+                            <p class="place-content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="btn">Buy Tickets</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--end Tour-->
+            <!--contact-->
+            <div id="contact" class="selection-content">
+                <div id="selection-tour">
+                    <h2 class="selection-heading">CONTACT</h2>
+                    <p class="selection-sub-heading">Fan? Drop a note!</p>
+                    
+                    <div class="row contact mt-32">
+                        <div class="clear"></div>
+                        <div class="col contact-content">
+                            <p > <i style="width: 30PX; height: 18px; display:inline-block;" class="ti-location-pin"></i> Chicago, US</p>
+                            <p > <i style="width: 30PX; height: 18px; display:inline-block;" class="ti-headphone" ></i>   Phone: +00 151515</p>
+                            <p > <i style="width: 30PX; height: 18px; display:inline-block;" class="ti-email"></i> Email: mail@mail.com</p>
+                        </div>
+                        <div class="col contact-input">
+                            <ul class="subcontact1">
+                                <li class="col name">
+                                    <input type="text" required placeholder="Name" name="name" class="content-input-name" >
+                                </li>
+                                <li class="col email">
+                                    <input type="text" required placeholder="Email" name="email" class="content-input-email" >
+                                </li>
+                            </ul>
+
+                        
+                            <div class="subcontact2">
+                                <input name="Messege" type="text" required placeholder="Messege" class="messege">
+                                <div class="clear"></div>
+                                <button class="btn pull-right" type="submit">SEND</button>
+                            </div>
+                            
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        <div id="map-img">
+            <img src="/asset/img/band/map.jpg" alt="bản đồ" class="map-img">
+        </div>
+
+        <div id="footer">
+            <div class="icon-footer">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+
+            <div class="footer-end">
+                <p>Powered by <a href="">w3.css</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        
+    </div>
+    <script>
+        var 
+    </script>
+</body>
+</html>

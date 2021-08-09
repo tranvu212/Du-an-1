@@ -1,0 +1,357 @@
+*{
+    padding: 0px;   
+    margin: 0px;
+    box-sizing: border-box;
+    /*không tìm ra lỗi thì dùng thuộc tính này:  overflow: hidden; */
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif ;/*-font chữ web-*/
+    scroll-behavior: smooth; /*-hiệu ứng trượt trên trình duyệt-*/
+}
+
+.text-white{    /*-lớp giả mày dành cho class nào cần đặt-*/
+    color: #fff;   
+    
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-32{
+    margin-top: 32px !important;
+}
+
+
+.row{ 
+    display: flex;
+    padding-bottom: 36px;
+    margin: 30px -8px 0 -8px;
+}
+
+
+/*-dùng chung-*/
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: sticky;
+    top: 0%;
+    z-index: 1; /*-quyết định "chiều sâu" của các element,đè hoặc chồng lên nhau-*/
+}
+
+#navi .ti-angle-down{/*-fix icon sau more, đặt class name sau đó css-*/
+    font-size: 10px;
+}   
+#navi li{
+    display: inline-block;
+    position: relative;
+}
+
+#navi >li >a{ /*-xác định element chuaant để css riêng-*/
+    color: #fff;
+    text-transform: uppercase;/*viết hoa element được chọn--*/
+}
+
+#navi li:hover .subnavi{ /*-chọn lớp giả cho thuộc tính đã được ẩn.-*/
+    display: block;
+}
+
+#navi li a{
+    text-decoration: none ;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+#navi >li:hover>a , #navi .subnavi li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#navi .subnavi{
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);/*-hiệu ứng bóng mờ cho bảng-*/
+    
+    
+}
+.subnavi >li >a{
+    color: black;
+    line-height: 40px;
+}
+
+#navi .subnavi li{
+    background-color: #fff ;
+    height: 40px;
+}
+
+#navi .subnavi li{
+    display: block;
+}
+.button-ti-search , .mobilemenu{
+    display: block;
+    color: #fff;
+    float: right;
+    padding: 13.5px 23px;
+}
+
+.mobilemenu{
+    display: none;
+}
+
+.mobilemenu:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.button-ti-search:hover{   
+    background-color: #f44336!important;
+    cursor: pointer ;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: url(/asset/img/slider/chicago.jpg) top center / cover no-repeat  ; /*-Cú pháp ngắn background: url , vị trí / kiểu(cover: lấy phần dài hơn của ảnh), không lăp ảnh.-*/       
+}
+
+.content-header{
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    width: 100% ;
+}
+.content-header >h2{
+    font-weight: 400;
+    margin: 10px 0;
+    padding-bottom: 9px;
+}
+
+.content-header >p{
+    font-size: 15px;
+    line-height: 1.5; /*-độ dày của dòng, nếu để vậy thỉ lệ vs chiều cao của chữ-*/
+}
+
+
+
+
+.selection-content{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 100%;  /*set chiều rộng tối đa khi trình duyệt thay đổi*/
+}
+
+.selection-heading{
+    text-align: center;
+    margin: 10PX 0;
+    font-size: 30Px;
+    line-height: 45px;
+    font-weight: 400; /*-độ dày của nét chữ-*/
+    letter-spacing: 4px; /*-khoảng cách giữa các chữ cái trong thẻ-*/
+
+}
+.selection-sub-heading{
+    text-align: center;
+    margin: 15PX 0;
+    font-size: 15x;
+    line-height: 22px;
+    font-style: italic; /*-chữ in nghiêng-*/
+    opacity: 0.6; /*-độ trong suốt của chữ-*/
+}
+.about-text{
+    font-size:15px;
+    margin: 15px 0;
+    text-align: justify; /*-căn đều văn bản -*/
+    line-height: 1.5;  /*-tiếng việt 1,5  tiếng a 1.4-*/
+}
+
+.menber-list{
+    padding: 32px 0;
+    
+}
+
+.menber-list .menber-icon{
+    text-align: center;
+    float: left;
+    width: 33.33333%;
+}
+
+.menber-icon .menber-name{
+    margin: 15px 0; 
+    font-size: 15px;
+
+}
+
+.menber-icon .menber-img{
+    width: 153.38px;
+    border-radius: 4px; /*-tạo bo tròn cho phần tử-*/
+}
+
+.clear{
+    clear: both; /*-tránh thuộc tính thẻ cha ko ôm hết thẻ con, float-*/
+}
+#content-tour{
+    background-color: #000;
+
+}
+
+.tickets-list{
+    margin-top: 37px;
+}
+
+.tickets-list li{
+    background-color: #fff;
+    border: solid 1px #ddd;
+    color: #757575;
+    padding: 8px 16px;
+    font-size: 15px !important;
+    list-style-type: none;
+    line-height: 1.5;
+   
+}
+
+.tickets-list .Sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 0 10px;
+    margin-left: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.qualyti{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 16px;
+    border-radius: 50%;/*-tạo bo tròn cho phần tử-*/
+
+}
+
+/*-phần titkets*/
+
+
+.place-item{
+    background-color: #fff;
+    margin: 0px 8px;
+    width: 33.33333%;
+}
+
+.place-img{
+   background-color: black;
+   width: 100%;
+}
+
+.place-img:hover{
+    opacity: 0.60;
+}
+
+.place-header{
+    color: #000;
+    font-size: 15px;
+    padding-left: 8px;
+    margin: 19px 8px;
+}
+
+.place-sub-header{
+    font-size: 15px;
+    padding-left: 8px;
+    margin: 8px ;
+    opacity: 0.60;
+}
+
+.place-content{
+    font-size: 15px;
+    padding-left: 8px;
+    margin: 21px 8px;
+
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.btn {
+    font-size: 15px;
+    margin: 8px 16px 16px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    width: 109px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+.btn:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+    cursor: pointer;
+}
+.col{
+    width: 50%;
+    padding: 0 8px 8px;
+
+}
+
+.contact-content{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.subcontact1{
+    display: flex;
+    list-style: none;
+}
+
+.subcontact2{
+    margin: 0 8px;
+}
+
+.content-input-name , .content-input-email {
+    
+    width: 100%;
+    line-height: 40px;
+    border: 1px solid #ccc;
+}
+
+.messege{
+    width: 100%;
+    border: 1px solid #ccc;
+    line-height: 40px;
+}
+
+
+.map-img{
+    display: block;
+    width: 100%;
+    filter: grayscale(50%);
+}
+#footer{
+    text-align: center;
+    height: 88px;
+    padding: 64px 16px;
+    color: #000;
+    opacity: 0.7;
+}
+
+#footer .icon-footer a{
+    text-decoration:  none;
+    color: #000;
+    font-size: 24px;
+}
+
+#footer .icon-footer a:hover{
+    opacity: 0.6;
+}
+
+.footer-end{
+    font-size: 15px;
+    margin: 15px 0;
+    padding-bottom: 89px;
+}
+
+.footer-end >p  >a{
+    color: #000;
+}
